@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<div class="center-column">
+    <h3>Update Tasks</h3>
+    <div class="item-row">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" name="task" value="Update" class="btn btn-info">
+
+        </form>
+    </div>
+</div>
